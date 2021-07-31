@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0.0)
-project(c_kit_test VERSION 0.1.0)
+project(cds_c_kit VERSION 0.1.0)
 
 include(CTest)
 enable_testing()
@@ -15,13 +15,13 @@ file(GLOB SRC_A_DIR ${PROJECT_SOURCE_DIR}/src/*.c)
 
 include_directories(./src/)
 
-add_library(c_kit_test SHARED 
+add_library(cds_c_kit SHARED 
     ${SRC_FILES}
 )
-# 给c_kit_test这个库文件新起一个别名叫cds::c_library
-add_library(cds::c_library ALIAS c_kit_test)
+# 给cds_c_kit这个库文件新起一个别名叫cds::c_library
+add_library(cds::c_library ALIAS cds_c_kit)
 
-target_include_directories(c_kit_test
+target_include_directories(cds_c_kit
     PUBLIC 
         ${PROJECT_SOURCE_DIR}/src
 )
@@ -47,8 +47,7 @@ ${PROJECT_SOURCE_DIR}/test
 # link the new hello_library target with the test_arraylist target
 target_link_libraries( test_arraylist
     PRIVATE 
-        # cds::c_library
-        c_kit_test
+        cds::c_library
 )
 
 
