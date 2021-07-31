@@ -1,7 +1,7 @@
 
 /*
 
-Copyright (c) 2008, Simon Howard
+Copyright (c) 2008, chenDongSheng
 
 Permission to use, copy, modify, and/or distribute this software
 for any purpose with or without fee is hereby granted, provided
