@@ -1,0 +1,4 @@
+﻿  list.c
+  c_base_lib.cpp
+C:\Users\cds\Desktop\github_project\staging\github_good_project\c-base-lib\cds_leaner_pjx\c_base_lib\c_base_lib.cpp(15,19): error C2040: “Persion”:“ListValue”与“Persion”的间接寻址级别不同
+C:\Users\cds\Desktop\github_project\staging\github_good_project\c-base-lib\cds_leaner_pjx\c_base_lib\c_base_lib.cpp(20,17): error C2079: “a”使用未定义的 struct“_ListEntry”
